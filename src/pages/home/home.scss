@@ -1,0 +1,61 @@
+page-home {
+    @import url('http://fonts.cdnfonts.com/css/billabong');
+
+    ion-header {
+
+        ion-navbar {
+            ion-title {
+                font-family: 'Billabong', sans-serif;
+                font-size:20px;
+            }
+        }
+    }
+
+    ion-grid {
+        position: fixed;
+    }
+
+    .story {
+        width: 100%;
+
+        ion-item {
+            overflow-x: scroll;
+            top: 0;
+
+            ion-avatar {
+                height: 50px;
+                width: 50px;
+                padding: 0;
+                margin: 0;
+
+                img {
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    ion-grid {
+        box-shadow: 20px 20px black;
+        top: 6em;
+
+        ion-card {
+
+            width: 8%;
+            margin-right: 9%;
+
+            ion-row {
+                width: 80%;
+
+                ion-col {
+                    div {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

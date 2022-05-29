@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <img *ngIf="img" [src]="img">
+  <ion-card-content>
+    <p>registro</p>
+  </ion-card-content>
+  </ion-card>
+  
+    <button ion-button (click)="tirarFoto()">Tirar foto</button>
+    
+</ion-content>
+
+
