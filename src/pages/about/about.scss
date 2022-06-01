@@ -1,3 +1,17 @@
 page-about {
+ion-content{
+    ion-card{
 
+        img{
+            height:70vw;
+            width:80%;
+            margin-left: 10%;
+            padding-top: 5%;
+        }
+    }
+    button{
+        right:auto;
+        left:35%;
+    }
+}
 }

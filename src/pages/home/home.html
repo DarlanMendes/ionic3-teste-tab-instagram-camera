@@ -3,53 +3,34 @@
     <ion-title><h1>Instagram</h1></ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content>
+<ion-content  >
 <ion-item class="story">
   <ion-item>
-    <ion-avatar item-start>
-      <img src="https://th.bing.com/th/id/OIP.L2ZyRDB9-bVOuwvaXCyelQHaE5?w=260&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7">
+    <ion-avatar item-start *ngFor="let item of items">
+      <img src="{{item.foto}}">
     </ion-avatar>
- 
-    <ion-avatar item-start>
-      <img src="https://th.bing.com/th/id/OIP.L2ZyRDB9-bVOuwvaXCyelQHaE5?w=260&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7">
-    </ion-avatar>
-  
-  <ion-avatar item-start>
-    <img src="https://th.bing.com/th/id/OIP.L2ZyRDB9-bVOuwvaXCyelQHaE5?w=260&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7">
-  </ion-avatar>
-  <ion-avatar item-start>
-    <img src="https://th.bing.com/th/id/OIP.L2ZyRDB9-bVOuwvaXCyelQHaE5?w=260&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7">
-  </ion-avatar>
-  <ion-avatar item-start>
-    <img src="https://th.bing.com/th/id/OIP.L2ZyRDB9-bVOuwvaXCyelQHaE5?w=260&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7">
-  </ion-avatar>
-  <ion-avatar item-start>
-    <img src="https://th.bing.com/th/id/OIP.L2ZyRDB9-bVOuwvaXCyelQHaE5?w=260&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7">
-  </ion-avatar>
-  <ion-avatar item-start>
-    <img src="https://th.bing.com/th/id/OIP.L2ZyRDB9-bVOuwvaXCyelQHaE5?w=260&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7">
-  </ion-avatar>
+   
+    
 </ion-item>
 
 </ion-item>
 
 
   <ion-grid>
-    <ion-card>
+    <ion-card *ngFor="let item of items">
   
       <ion-item>
         <ion-avatar item-start>
-          <img src="https://web.ficemcasa.ifce.edu.br/assets/img/logo/fic_em_casa.png">
+          <img src="{{item.foto}}">
         </ion-avatar>
-        <h2>FICemCASA</h2>
+        <h2>{{item.user}}</h2>
         <p>25 de maio de 2022</p>
       </ion-item>
   
-      <img src="https://web.ficemcasa.ifce.edu.br/assets/img/logo/fic_em_casa.png">
+      <img src="{{item.foto}}">
   
       <ion-card-content>
-        <p>Já se inscreveu em algum dos nossos cursos disponíveis na nossa plataforma?Não perca tempo e clica no link na
-          nossa bio</p>
+        <p>{{item.texto}}</p>
       </ion-card-content>
   
       <ion-row>
@@ -78,91 +59,7 @@
       </ion-row>
   
     </ion-card>
-    <ion-card>
-  
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="https://web.ficemcasa.ifce.edu.br/assets/img/logo/fic_em_casa.png">
-        </ion-avatar>
-        <h2>FICemCASA</h2>
-        <p>25 de maio de 2022</p>
-      </ion-item>
-  
-      <img src="https://web.ficemcasa.ifce.edu.br/assets/img/logo/fic_em_casa.png">
-  
-      <ion-card-content>
-        <p>Já se inscreveu em algum dos nossos cursos disponíveis na nossa plataforma?Não perca tempo e clica no link na
-          nossa bio</p>
-      </ion-card-content>
-  
-      <ion-row>
-        <ion-col>
-          <button ion-button icon-start clear small>
-            <ion-icon name="thumbs-up"></ion-icon>
-            <div>40 Gosteis</div>
-          </button>
-        </ion-col>
-        <ion-col>
-          <button ion-button icon-start clear small>
-            <div>4 Comentários</div>
-          </button>
-        </ion-col>
-        <ion-col>
-          <button ion-button icon-start clear small>
-            <ion-icon name="share"></ion-icon>
-            <div>compartilhar</div>
-          </button>
-        </ion-col>
-        <ion-col align-self-center text-center>
-          <ion-note>
-            11h atrás
-          </ion-note>
-        </ion-col>
-      </ion-row>
-  
-    </ion-card>
-    <ion-card>
-  
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="https://web.ficemcasa.ifce.edu.br/assets/img/logo/fic_em_casa.png">
-        </ion-avatar>
-        <h2>FICemCASA</h2>
-        <p>25 de maio de 2022</p>
-      </ion-item>
-  
-      <img src="https://web.ficemcasa.ifce.edu.br/assets/img/logo/fic_em_casa.png">
-  
-      <ion-card-content>
-        <p>Já se inscreveu em algum dos nossos cursos disponíveis na nossa plataforma?Não perca tempo e clica no link na
-          nossa bio</p>
-      </ion-card-content>
-  
-      <ion-row>
-        <ion-col>
-          <button ion-button icon-start clear small>
-            <ion-icon name="thumbs-up"></ion-icon>
-            <div>40 Gosteis</div>
-          </button>
-        </ion-col>
-        <ion-col>
-          <button ion-button icon-start clear small>
-            <div>4 Comentários</div>
-          </button>
-        </ion-col>
-        <ion-col>
-          <button ion-button icon-start clear small>
-            <ion-icon name="share"></ion-icon>
-            <div>compartilhar</div>
-          </button>
-        </ion-col>
-        <ion-col align-self-center text-center>
-          <ion-note>
-            11h atrás
-          </ion-note>
-        </ion-col>
-      </ion-row>
-  
-    </ion-card>
+    
+ 
   </ion-grid>
 </ion-content>

@@ -1,15 +1,16 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Câmera
     </ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content>
   <ion-card>
-    <img *ngIf="img" [src]="img">
+    <img id=providerimg *ngIf="this.CameraProvider.foto" [src]="this.CameraProvider.foto">
+    <img *ngIf="!this.CameraProvider.foto" src="https://th.bing.com/th/id/OIP.whPW7NR9bVUk4u7UV0hLsgHaHa?pid=ImgDet&rs=1">
   <ion-card-content>
-    <p>registro</p>
+    <p>Registro</p>
   </ion-card-content>
   </ion-card>
   
